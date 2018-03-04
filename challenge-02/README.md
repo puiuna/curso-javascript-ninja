@@ -10,12 +10,16 @@ function soma(a, b){
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
 ?
+var resultado = soma(10, 8);
+
 
 // Qual o valor atualizado dessa variável?
 ?
+18
 
 // Declare uma nova variável, sem valor.
 ?
+var qualquer;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
@@ -23,12 +27,20 @@ Crie uma função que adicione um valor à variável criada acima, e retorne a s
 Onde VALOR é o novo valor da variável.
 */
 ?
+function addvalor(){
+	qualquer = 77;
+	return "O valor da variável agora é " + qualquer;
+}
 
 // Invoque a função criada acima.
 ?
+addvalor();
 
 // Qual o retorno da função? (Use comentários de bloco).
 ?
+/* O retorno é:
+'O valor da variável agora é 77'
+*/
 
 /*
 Crie uma função com as seguintes características:
@@ -38,18 +50,28 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 ?
+function verifica(a, b, c){
+	if (a === undefined || b === undefined || c === undefined){
+		return 'Preencha todos os valores corretamente!';
+	} else {
+		 return (a * b * c) + 2
+	}
+}
 
 // Invoque a função criada acima, passando só dois números como argumento.
 ?
+verifica(2, 3)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 ?
+// 'Preencha todos os valores corretamente!'
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
 ?
-
+verifica(2, 2, 2)
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 ?
+// 10
 
 /*
 Crie uma função com as seguintes características:
@@ -85,7 +107,7 @@ dados()
 dados(5)
 // 5
 
-dados(7,5)
+dados(7, 5)
 // 12
 
 dados(10, 4, 8)
